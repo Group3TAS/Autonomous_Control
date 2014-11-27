@@ -1,0 +1,63 @@
+          Cell 01 - Address: E8:39:35:F5:AC:F5
+                    ESSID:"mwn-events"
+                    Signal level=96/100  
+          Cell 02 - Address: 58:6D:8F:02:B7:DC
+                    ESSID:"<hidden>"
+                    Signal level=100/100  
+          Cell 03 - Address: 00:0F:61:53:E6:B0
+                    ESSID:"lrz"
+                    Signal level=92/100  
+          Cell 04 - Address: 00:0F:61:53:E6:B2
+                    ESSID:"eduroam"
+                    Signal level=100/100  
+          Cell 05 - Address: 00:0F:61:53:E6:B3
+                    ESSID:"ap01-3b5"
+                    Signal level=92/100  
+          Cell 06 - Address: 00:0F:61:53:E6:B4
+                    ESSID:"lsr"
+                    Signal level=92/100  
+          Cell 07 - Address: 00:0F:61:53:E6:B5
+                    ESSID:"mwn-events"
+                    Signal level=92/100  
+          Cell 08 - Address: 00:0F:61:54:5F:62
+                    ESSID:"mwn-events"
+                    Signal level=74/100  
+          Cell 09 - Address: 00:0F:61:54:5F:63
+                    ESSID:"eduroam"
+                    Signal level=74/100  
+          Cell 10 - Address: 00:0F:61:54:5F:64
+                    ESSID:"ap02-2b5"
+                    Signal level=74/100  
+          Cell 11 - Address: 00:0F:61:54:5F:60
+                    ESSID:"lrz"
+                    Signal level=72/100  
+          Cell 12 - Address: 00:03:52:5B:8C:A0
+                    ESSID:"lrz"
+                    Signal level=46/100  
+          Cell 13 - Address: 00:03:52:5B:8C:A2
+                    ESSID:"eduroam"
+                    Signal level=46/100  
+          Cell 14 - Address: 00:03:52:5B:8C:A4
+                    ESSID:"ap02-3b5"
+                    Signal level=46/100  
+          Cell 15 - Address: 00:03:52:5B:8C:A5
+                    ESSID:"mwn-events"
+                    Signal level=46/100  
+          Cell 16 - Address: E8:39:35:F5:AC:F0
+                    ESSID:"lrz"
+                    Signal level=100/100  
+          Cell 17 - Address: E8:39:35:F5:AC:F2
+                    ESSID:"eduroam"
+                    Signal level=100/100  
+          Cell 18 - Address: E8:39:35:F5:AC:F4
+                    ESSID:"ap04-3b5"
+                    Signal level=92/100  
+          Cell 19 - Address: 24:DE:C6:10:14:C1
+                    ESSID:"eduroam"
+                    Signal level=48/100  
+          Cell 20 - Address: 24:DE:C6:10:14:C2
+                    ESSID:"lrz"
+                    Signal level=48/100  
+          Cell 21 - Address: 9C:1C:12:C1:5A:C4
+                    ESSID:"mwn-events"
+                    Signal level=44/100  

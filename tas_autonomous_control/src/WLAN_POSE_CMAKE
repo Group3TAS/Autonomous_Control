@@ -1,0 +1,4 @@
+add_executable(pose_data src/pose_data.cpp)
+add_library(wlan_data src/wlan_data.cpp)
+target_link_libraries(pose_data wlan_data ${catkin_LIBRARIES})
+add_dependencies(pose_data tas_autonomous_control_generate_messages_cpp)

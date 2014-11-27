@@ -1,0 +1,4 @@
+add_executable(car_dynamics src/car_dynamics.cpp)
+add_library(laser_processing src/laser_processing.cpp)
+target_link_libraries(car_dynamics laser_processing ${catkin_LIBRARIES})
+add_dependencies(car_dynamics tas_autonomous_control_generate_messages_cpp)
