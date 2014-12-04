@@ -53,9 +53,9 @@ string wlan_data::wlan_quality(string& line)
   return quality_data;
 }
 
-void wlan_data_write(float x_coord, float y_coord,vector<float> cov_vec)
+void wlan_data_write(float x_coord, float y_coord,vector<float> cov_vec, vector<float> orient_vec)
 {
-  // Convert cov_vec of type vector to type string
+  // Convert cov_vec from type vector to type string
   stringstream ss;
   string cov_string;
   ss << '[';
@@ -70,6 +70,24 @@ void wlan_data_write(float x_coord, float y_coord,vector<float> cov_vec)
   ss << ']';
   ss.str().c_str();
   cov_string = ss.str();
+
+  ss.str("");
+
+  // Convert orient_vec from type vector to type string
+  stringstream ss;
+  string orient_string;
+  ss << '[';
+  for (vector<float>::size_type i = 0; i != orient_vec.size(); i++)
+    {
+      ss << orient_vec[i];
+      if ( i != orient_vec.size() - 1)
+	{
+	  ss << ',';
+	}
+    }
+  ss << ']';
+  ss.str().c_str();
+  orient_string = ss.str();
   
   // Retrieve real-time wlan data from process and save to text file
   popen("iwlist wlan3 scan | grep -e Address -e Signal -e ESSID > wlan_sources_raw.txt","r");
@@ -108,7 +126,7 @@ void wlan_data_write(float x_coord, float y_coord,vector<float> cov_vec)
       // the self-defined namespace wlan_data.  Each function extracts information
       // from the vector wlan_data_vec.  output is then appended to the end of the wlan_sources_database.txt
       // file.
-      output = x_string.str() + ";" + y_string.str() + ";" + cov_string + ";"+ wlan_data::wlan_address(wlan_data_vec[index]) + ";" +
+      output = x_string.str() + ";" + y_string.str() + ";" + cov_string + ";"+ orient_string + ";" + wlan_data::wlan_address(wlan_data_vec[index]) + ";" +
     wlan_data::wlan_signal(wlan_data_vec[index+2]) +
     ";" + wlan_data::wlan_essid(wlan_data_vec[index+1]);
       cout << output << endl;

@@ -20,14 +20,16 @@ void nextCallback(const geometry_msgs::PoseWithCovarianceStamped::ConstPtr& msg)
   ROS_INFO("Z Coordinate: %f", msg->pose.pose.position.z);
 
   int x = msg->pose.covariance.size();
-  vector<float> cov_vec;
+  vector<float> cov_vec, orient_vec;
   for (int i = 0; i != x ; i++)
   {
       cov_vec.push_back(msg->pose.covariance[i]);
       cout << cov_vec[i] << endl;
   }
 
-  wlan_data_write(msg->pose.pose.position.x,msg->pose.pose.position.y,cov_vec);
+  orient_vec.push_back(pose.pose.orientation.z);
+  orient_vec.push_back(pose.pose.orientation.w);
+  wlan_data_write(msg->pose.pose.position.x,msg->pose.pose.position.y,cov_vec,orient_vec);
 }
 
 int main(int argc, char **argv)
